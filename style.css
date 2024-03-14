@@ -1,3 +1,21 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1070px;
+}
+
+form>.order {
+  background-color: #F9D867;
+  width: 528px;
+  height: 425px;
+}
+
+form>.pizza {
+  background-color: #EEE7B8;
+  width: 541px;
+  height: 425px;
+}
+
 .picture {
   display: flex;
   flex-wrap: wrap;
@@ -21,4 +39,15 @@
 
 .picture>.quarter:nth-child(4) {
   background-position: -200px -200px;
+}
+
+form>.ingredients {
+  background-color: #FFECAD;
+  height: 225px;
+  display: flex;
+  width: 100%;
+}
+
+fieldset {
+  flex-grow: 1;
 }

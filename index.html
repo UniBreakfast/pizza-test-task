@@ -10,39 +10,165 @@
   <!--<link rel="stylesheet" href="base.css">-->
   <link rel="stylesheet" href="style.css">
   <!--<script type="module" src="app.js"></script>-->
-  <!--<script src="script.js" defer></script>-->
+  <script src="script.js" defer></script>
 
   <title>Pizza Order</title>
 </head>
 
 <body id="body">
   <main>
-    <div class="order">
-      <h2>Order View</h2>
-
-      <ul class="ingredients">
-        <li class="ingredient"></li>
-        <li class="ingredient"></li>
-        <li class="ingredient"></li>
-        <li class="ingredient"></li>
-        <li class="ingredient" hidden></li>
-      </ul>
-
-      <output class="price">Price: 39$</output>
-    </div>
-    
-    <div class="pizza">
-      <div class="picture">
-        <div class="quarter"></div>
-        <div class="quarter"></div>
-        <div class="quarter"></div>
-        <div class="quarter" hidden></div>
+    <form>
+      <div class="order">
+        <h2>Order View</h2>
+  
+        <ul class="ingredients">
+          <li class="ingredient"></li>
+          <li class="ingredient"></li>
+          <li class="ingredient"></li>
+          <li class="ingredient"></li>
+          <li class="ingredient" hidden></li>
+        </ul>
+  
+        <output class="price">Price: 39$</output>
       </div>
+      
+      <div class="pizza">
+        <div class="picture">
+          <div class="quarter"></div>
+          <div class="quarter"></div>
+          <div class="quarter"></div>
+          <div class="quarter" hidden></div>
+        </div>
+  
+        <button class="order">Order</button>
+      </div>
+      
+      <div class="ingredients">
+        <fieldset class="base">
+          <legend>Base</legend>
 
-      <button class="order">Order</button>
-    </div>
-    
-    <div class="ingredients"></div>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="base" value="base1">
+                <span>Base 1</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="base" value="base2">
+                <span>Base 2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="base" value="base3">
+                <span>Base 3</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="base" value="base4">
+                <span>Base 4</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="ingredient1">
+          <legend>Ingredient 1</legend>
+
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient1" value="ingredient1-1">
+                <span>Ingredient 1.1</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient1" value="ingredient1-2">
+                <span>Ingredient 1.2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient1" value="ingredient1-3">
+                <span>Ingredient 1.3</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient1" value="ingredient1-4">
+                <span>Ingredient 1.4</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="ingredient2">
+          <legend>Ingredient 2</legend>
+
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient2" value="ingredient2-1">
+                <span>Ingredient 2.1</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient2" value="ingredient2-2">
+                <span>Ingredient 2.2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient2" value="ingredient2-3">
+                <span>Ingredient 2.3</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="ingredient2" value="ingredient2-4">
+                <span>Ingredient 2.4</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="souse">
+          <legend>Souse</legend>
+
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="souse" value="souse1">
+                <span>Souse 1</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="souse" value="souse2">
+                <span>Souse 2</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="souse" value="souse3">
+                <span>Souse 3</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="souse" value="souse4">
+                <span>Souse 4</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </form>
   </main>
 </body>
 
