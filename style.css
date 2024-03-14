@@ -8,6 +8,26 @@ form>.order {
   background-color: #F9D867;
   width: 528px;
   height: 425px;
+  padding: 30px;
+}
+
+.ingredients label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ingredients span:first-of-type {
+  flex-grow: 1;
+}
+
+.price {
+  margin-right: 30px;
+}
+
+.price::before {
+  display: inline;
+  content: '$';
 }
 
 form>.pizza {
@@ -49,5 +69,6 @@ form>.ingredients {
 }
 
 fieldset {
+  padding: 20px;
   flex-grow: 1;
 }
